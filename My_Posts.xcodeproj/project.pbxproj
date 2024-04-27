@@ -25,6 +25,7 @@
 		9C7F4F142BDBC52E0067E3FD /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F4F122BDBC52E0067E3FD /* PostCell.swift */; };
 		9C7F4F152BDBC52E0067E3FD /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C7F4F132BDBC52E0067E3FD /* PostCell.xib */; };
 		9C7F4F1A2BDBE1BD0067E3FD /* PostDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F4F192BDBE1BD0067E3FD /* PostDetailsViewModel.swift */; };
+		9C7F4F1D2BDCFB810067E3FD /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7F4F1C2BDCFB810067E3FD /* Loader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		9C7F4F122BDBC52E0067E3FD /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		9C7F4F132BDBC52E0067E3FD /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
 		9C7F4F192BDBE1BD0067E3FD /* PostDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewModel.swift; sourceTree = "<group>"; };
+		9C7F4F1C2BDCFB810067E3FD /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		9C78F3E42BDBA3940040CDE6 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9C7F4F1B2BDCFB740067E3FD /* Loader */,
 				9C78F3E52BDBA3940040CDE6 /* Constants.swift */,
 				9C78F3E82BDBA3940040CDE6 /* Extensions */,
 				9C78F3EA2BDBA3940040CDE6 /* CommonFunctions.swift */,
@@ -202,6 +205,14 @@
 				9C78F3FC2BDBA9960040CDE6 /* PostDetailsVC.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9C7F4F1B2BDCFB740067E3FD /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				9C7F4F1C2BDCFB810067E3FD /* Loader.swift */,
+			);
+			path = Loader;
 			sourceTree = "<group>";
 		};
 		BF76858C25FD96E357232760 /* Frameworks */ = {
@@ -340,6 +351,7 @@
 				9C78F3F92BDBA4730040CDE6 /* Posts.swift in Sources */,
 				9C78F3ED2BDBA3940040CDE6 /* Constants.swift in Sources */,
 				9C78F4012BDBABF90040CDE6 /* UITableView+Extension.swift in Sources */,
+				9C7F4F1D2BDCFB810067E3FD /* Loader.swift in Sources */,
 				9C7F4F142BDBC52E0067E3FD /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

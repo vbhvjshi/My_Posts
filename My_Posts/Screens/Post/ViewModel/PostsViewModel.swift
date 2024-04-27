@@ -13,15 +13,19 @@ class PostsViewModel {
     var currentPage: Int = 1
     
     func fetchPosts(completion: @escaping (Result<[Post], Error>) -> Void) {
+        Loader.shared.show()
         APIService.shared.fetchPosts(page: currentPage) { result in
-            switch result {
-            case .success(let posts):
-                posts.forEach { post in
-                    self.posts.append(post)
+            DispatchQueue.main.async {
+                Loader.shared.hide()
+                switch result {
+                case .success(let posts):
+                    posts.forEach { post in
+                        self.posts.append(post)
+                    }
+                    completion(.success(posts))
+                case .failure(let error):
+                    completion(.failure(error))
                 }
-                completion(.success(posts))
-            case .failure(let error):
-                completion(.failure(error))
             }
         }
     }

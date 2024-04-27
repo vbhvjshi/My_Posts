@@ -30,9 +30,7 @@ class PostsVC: UIViewController {
         viewModel.fetchPosts() { result in
             switch result {
             case .success:
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
+                self.tableView.reloadData()
             case .failure(let error):
                 print("Error fetching posts: \(error.localizedDescription)")
             }
