@@ -22,8 +22,9 @@
                         <rect key="frame" x="10" y="5" width="437" height="86"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post ID:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZ4-yO-VUC">
-                                <rect key="frame" x="9.9999999999999964" y="10" width="56.666666666666657" height="24"/>
+                                <rect key="frame" x="10" y="10" width="100" height="24"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="QHC-Rc-Ste"/>
                                     <constraint firstAttribute="height" constant="24" id="Wms-hF-GU3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
@@ -43,7 +44,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bng-JZ-9TF">
-                                <rect key="frame" x="71.666666666666671" y="10" width="67.000000000000014" height="24"/>
+                                <rect key="frame" x="360" y="10" width="67" height="24"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1111" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2re-z4-kNz">
                                         <rect key="frame" x="20" y="0.0" width="27" height="24"/>
@@ -75,7 +76,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ir8-qi-Jpe" firstAttribute="leading" secondItem="PZ4-yO-VUC" secondAttribute="leading" id="5HH-ec-CO7"/>
-                            <constraint firstItem="bng-JZ-9TF" firstAttribute="leading" secondItem="PZ4-yO-VUC" secondAttribute="trailing" constant="5" id="BkX-oN-gX5"/>
+                            <constraint firstItem="bng-JZ-9TF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PZ4-yO-VUC" secondAttribute="trailing" constant="5" id="BkX-oN-gX5"/>
                             <constraint firstItem="bng-JZ-9TF" firstAttribute="centerY" secondItem="PZ4-yO-VUC" secondAttribute="centerY" id="DkY-Vs-J3P"/>
                             <constraint firstItem="38r-My-WXw" firstAttribute="top" secondItem="Ir8-qi-Jpe" secondAttribute="bottom" constant="5" id="Dz8-8w-NmY"/>
                             <constraint firstItem="Ir8-qi-Jpe" firstAttribute="top" secondItem="PZ4-yO-VUC" secondAttribute="bottom" constant="5" id="GNB-gR-sDS"/>
@@ -84,7 +85,7 @@
                             <constraint firstItem="PZ4-yO-VUC" firstAttribute="leading" secondItem="wlT-Ed-Seh" secondAttribute="leading" constant="10" id="gME-oi-iwu"/>
                             <constraint firstAttribute="bottom" secondItem="38r-My-WXw" secondAttribute="bottom" constant="10" id="izI-YM-O1s"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="38r-My-WXw" secondAttribute="trailing" constant="10" id="m7g-UT-K6v"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bng-JZ-9TF" secondAttribute="trailing" constant="10" id="qO4-F8-Ugz"/>
+                            <constraint firstAttribute="trailing" secondItem="bng-JZ-9TF" secondAttribute="trailing" constant="10" id="qO4-F8-Ugz"/>
                             <constraint firstItem="PZ4-yO-VUC" firstAttribute="top" secondItem="wlT-Ed-Seh" secondAttribute="top" constant="10" id="uE9-qt-uOZ"/>
                             <constraint firstItem="38r-My-WXw" firstAttribute="leading" secondItem="Ir8-qi-Jpe" secondAttribute="leading" constant="15" id="zUN-5s-IAG"/>
                         </constraints>
